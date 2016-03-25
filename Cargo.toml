@@ -1,0 +1,9 @@
+[package]
+authors = ["tillarnold <throwable42@gmail.com>"]
+name = "left-pad-io"
+version = "0.1.0"
+
+[dependencies]
+hyper = "0.8.0"
+quick-error = "1.0.0"
+rustc-serialize = "0.3.18"
