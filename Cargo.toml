@@ -1,7 +1,10 @@
 [package]
 authors = ["tillarnold <throwable42@gmail.com>"]
 name = "left-pad-io"
-version = "0.1.0"
+version = "0.0.1"
+description = "Rest client for left-pad.io"
+license = "MIT"
+repository = "https://github.com/tillarnold/left-pad-io"
 
 [dependencies]
 hyper = "0.8.0"
