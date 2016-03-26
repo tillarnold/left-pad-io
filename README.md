@@ -1,5 +1,8 @@
 #left-pad-io
 
+[![Build Status](https://travis-ci.org/tillarnold/left-pad-io.svg?branch=master)](https://travis-ci.org/tillarnold/left-pad-io)
+[![Crates.io](https://img.shields.io/crates/v/left-pad-io.svg)](https://crates.io/crates/left-pad-io)
+
 This is a REST client for http://left-pad.io.
 And yes this is kind of a joke.
 And I also wanted to try out rust, cargo and crates.io.
