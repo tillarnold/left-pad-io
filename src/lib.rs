@@ -70,7 +70,9 @@ fn api_error_response(obj: &mut json::Object) -> PadError {
 
 pub fn left_pad(string: &str, ch: &str, len: u32) -> Result<String, PadError> {
     let mut url = Url::parse("https://api.left-pad.io").unwrap();
-    url.set_query_from_pairs(&[("str", string), ("len", &len.to_string()), ("ch", ch)]);
+    url.query_pairs_mut()
+        .clear()
+        .extend_pairs(&[("str", string), ("len", &len.to_string()), ("ch", ch)]);
 
     let client = Client::new();
     let mut res = try!(client.get(url).send());
@@ -116,7 +118,7 @@ mod test {
     fn it_does_not_work_with_numbers_above_1024() {
 
         let result = left_pad("hello", " ", 1025).unwrap_err();
-        if let PadError::ApiError{..} = result {
+        if let PadError::ApiError { .. } = result {
 
         } else {
             panic!("should have been an ApiError was: {}", result);
