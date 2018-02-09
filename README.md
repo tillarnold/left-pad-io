@@ -1,4 +1,4 @@
-#left-pad-io
+# left-pad-io
 
 [![Build Status](https://travis-ci.org/tillarnold/left-pad-io.svg?branch=master)](https://travis-ci.org/tillarnold/left-pad-io)
 [![Crates.io](https://img.shields.io/crates/v/left-pad-io.svg)](https://crates.io/crates/left-pad-io)
